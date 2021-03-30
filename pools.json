@@ -1,0 +1,28 @@
+{
+	"pools": [
+		{
+			"name": "pktpool.io",
+			"filename": "pktpool-io",
+			"config": "http://pool.pktpool.io/config.json",
+			"url": "http://paymaker.pktpool.io/whotopay"
+		},
+		{
+			"name": "pkt.world",
+			"filename": "pkt-world",
+			"config": "http://pool.pkt.world/master/config.json",
+			"url": "http://pool.pkt.world/pay/whotopay"
+		},
+		{
+			"name": "pkteerpool.com",
+			"filename": "pkteerpool-com",
+			"config": "http://pool.pkteer.com/config.json",
+			"url": "http://paymaker.pkteerpool.com/whotopay"
+		},
+		{
+			"name": "noworries.tech",
+			"filename": "noworries-tech",
+			"config": "http://noworries.tech/pool/config.json",
+			"url": "http://pool.noworries.tech/whotopay"
+		}
+	]
+}
