@@ -60,7 +60,7 @@ python pkt-mining-stats.py
 
 Once it runs, visit <http://localhost:8050> (or whatever you configured in `setings.py`) Ignore the errors the first time you visit the page. Select your PKT address and start monitoring!
 
-By default the graphs display the last 48 hours, it is hardcoded in `show_address_stats.py` on line 22.
+By default the graphs display the last 2 days.
 
 ## Built with
 

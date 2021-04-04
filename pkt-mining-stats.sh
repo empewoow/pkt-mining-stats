@@ -1,6 +1,8 @@
 #!/bin/bash
 
-killall -9 python3
+pkill -f get_address_stats.py
+pkill -f get_pool_stats.py
+pkill -f pkt-mining-stats.py
 
 #mv nohup.out logs/$(date +%F-%H-%M).log
 
