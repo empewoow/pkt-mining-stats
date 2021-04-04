@@ -7,6 +7,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 from app import app
+from settings import *
 
 # https://stackoverflow.com/questions/60172150/dash-python-how-to-fill-dcc-dropdown-with-csv-content
 # https://stackoverflow.com/questions/48614158/read-json-file-as-pandas-dataframe
@@ -21,7 +22,7 @@ def get_current_datetime_range():
 	global datetime_range_from, datetime_range_to
 	# Generate graph from last 48 hours:
 	date_to = datetime.now()
-	date_from = date_to - timedelta(days = 2)
+	date_from = date_to - timedelta(days = timeScale)
 	datetime_range_from = date_from.strftime("%Y-%m-%d %H:%M")
 	datetime_range_to = date_to.strftime("%Y-%m-%d %H:%M")
 
