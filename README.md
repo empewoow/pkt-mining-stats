@@ -18,11 +18,11 @@ Configure these files first (they work by default):
 
 ## Prerequisites
 
-Linux, tested on Ubuntu. Also works on Windows, but there is no batch file yet to start all scripts.
+Tested on Linux and Windows
 
-What you need:
+Prerequisites:
 
-* Python3
+* [Python3]https://www.python.org/downloads/
 * dash
 * pandas
 * requests
@@ -43,11 +43,12 @@ pip install pandas
 
 ## Running
 
+### Linux
 Once configured, on Linux you can run `./pkt-mining-stats.sh` to run all the scripts. It basically runs these three scripts in the background:
 
 * `get_address_stats.py` (To get the statistics for your PKT addresses every 10 minutes.)
 * `get_pool_stats.py` (To get additional statistics of all pools every 1 hour.)
-* `pkt-mining-stats.py` (To run the web appplication.)
+* `pkt-mining-stats.py` (To run the web application.)
 
 So what you can also do manually:
 
@@ -58,7 +59,24 @@ python pkt-mining-stats.py
 ```
 (Run them in 3 different terminals.)
 
-Once it runs, visit <http://localhost:8050> (or whatever you configured in `setings.py`) Ignore the errors the first time you visit the page. Select your PKT address and start monitoring!
+### Windows
+
+Run `pkt-mining-stats.bat`
+
+Or, start the services manually via command prompt:
+
+```
+start cmd /k "python get_address_stats.py"
+start cmd /k "python get_pool_stats.py"
+start cmd /k "python pkt-mining-stats.py"
+```
+
+### Opening the webinterface
+Once it runs, visit <http://localhost:8050> (or whatever you configured in `setings.py`).
+Ignore the errors the first time you visit the page. Select your PKT address and start monitoring!
+
+If prompted with an SSL error. Try accessing in incognito mode.
+Make sure to access the page with http:// and not https://
 
 By default the graphs display the last 2 days.
 
