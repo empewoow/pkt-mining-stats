@@ -18,7 +18,7 @@ Configure these files first (they work by default):
 
 ## Prerequisites
 
-Tested on Linux and Windows
+Tested on Linux Ubuntu and Windows
 
 Prerequisites:
 
