@@ -40,7 +40,7 @@
 			"name": "pktminers.cash",
 			"filename": "pktminers.cash",
 			"config": "http://dalpool.pktminers.cash/config.json",
-			"url": "http://paymaker.pktminers.cash"
+			"url": "http://paymaker.pktminers.cash/whotopay"
 		}
 	]
 }
