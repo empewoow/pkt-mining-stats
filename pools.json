@@ -26,19 +26,19 @@
 		},
 		{
 			"name": "srizbi.com",
-			"filename": "srizbi.com",
+			"filename": "srizbi-com",
 			"config": "http://pool.srizbi.com/config.json",
 			"url": "http://wpm01.pool.srizbi.com/whotopay"
 		},
 		{
 			"name": "easypkt.com",
-			"filename": "easypkt.com",
+			"filename": "easypkt-com",
 			"config": "http://pool.easypkt.com/config.json",
 			"url": "http://paymkr.easypkt.com/whotopay"
 		},
 		{
 			"name": "pktminers.cash",
-			"filename": "pktminers.cash",
+			"filename": "pktminers-cash",
 			"config": "http://dalpool.pktminers.cash/config.json",
 			"url": "http://paymaker.pktminers.cash/whotopay"
 		}

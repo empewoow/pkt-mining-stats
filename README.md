@@ -18,11 +18,9 @@ Configure these files first (they work by default):
 
 ## Prerequisites
 
-Tested on Linux Ubuntu and Windows
+Tested on Linux Ubuntu and Windows.
 
-Prerequisites:
-
-* [Python3]https://www.python.org/downloads/
+* [Python3](https://www.python.org/downloads/)
 * dash
 * pandas
 * requests
@@ -71,7 +69,7 @@ start cmd /k "python get_pool_stats.py"
 start cmd /k "python pkt-mining-stats.py"
 ```
 
-### Opening the webinterface
+### Opening the web interface
 Once it runs, visit <http://localhost:8050> (or whatever you configured in `setings.py`).
 Ignore the errors the first time you visit the page. Select your PKT address and start monitoring!
 
@@ -94,7 +92,9 @@ Not yet applicable.
 
 ## Authors
 
-* **Matthijs** - *Initial work*
+* **empewoow (Matthijs)** - *Initial work*
+* **m0n4** - *Bugfixes and improvements*
+* **vtermaat (Vincent)** - *Bugfixes and improvements*
 
 ## License
 
