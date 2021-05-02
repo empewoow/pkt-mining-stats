@@ -73,6 +73,7 @@ layout = html.Div([
 	[Input(component_id = 'my_dropdown', component_property = 'value')]
 )
 def display_graph1(n_intervals, pktAddressToUse):
+	if not pktAddressToUse: return {}
 	dataframe = pd.read_csv(address_stats_csv_file)
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'currentEncryptionsPerSecond'
@@ -86,6 +87,7 @@ def display_graph1(n_intervals, pktAddressToUse):
 	[Input(component_id = 'my_dropdown', component_property = 'value')]
 )
 def display_graph2(n_intervals, pktAddressToUse):
+	if not pktAddressToUse: return {}
 	dataframe = pd.read_csv(address_stats_csv_file)
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'kbps'
@@ -99,6 +101,7 @@ def display_graph2(n_intervals, pktAddressToUse):
 	[Input(component_id = 'my_dropdown', component_property = 'value')]
 )
 def display_graph3(n_intervals, pktAddressToUse):
+	if not pktAddressToUse: return {}
 	dataframe = pd.read_csv(address_stats_csv_file)
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'warmupPercent'
@@ -112,6 +115,7 @@ def display_graph3(n_intervals, pktAddressToUse):
 	[Input(component_id = 'my_dropdown', component_property = 'value')]
 )
 def display_graph4(n_intervals, pktAddressToUse):
+	if not pktAddressToUse: return {}
 	dataframe = pd.read_csv(address_stats_csv_file)
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'credits'
