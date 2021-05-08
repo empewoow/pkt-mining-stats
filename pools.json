@@ -28,7 +28,7 @@
 			"name": "srizbi.com",
 			"filename": "srizbi-com",
 			"config": "http://pool.srizbi.com/config.json",
-			"url": "http://wpm01.pool.srizbi.com/whotopay"
+			"url": "http://events.srizbi.com/whotopay"
 		},
 		{
 			"name": "easypkt.com",
