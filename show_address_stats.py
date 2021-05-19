@@ -78,7 +78,8 @@ def display_graph1(n_intervals, pktAddressToUse):
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'currentEncryptionsPerSecond'
 	get_current_datetime_range()
-	fig = px.line(dataframe, x = x, y = y, color = 'pool', title = "Encryptions per second (Ke/s)", range_x = [datetime_range_from, datetime_range_to])	
+	fig = px.scatter(dataframe, x = x, y = y, color = 'pool', title = "Encryptions per second (Ke/s)", range_x = [datetime_range_from, datetime_range_to])
+	fig.update_traces(mode = 'lines+markers')
 	return fig
 
 @app.callback(
@@ -92,7 +93,8 @@ def display_graph2(n_intervals, pktAddressToUse):
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'kbps'
 	get_current_datetime_range()
-	fig = px.line(dataframe, x = x, y = y, color = 'pool', title="Bandwidth (MB/s)", range_x = [datetime_range_from, datetime_range_to])	
+	fig = px.scatter(dataframe, x = x, y = y, color = 'pool', title="Bandwidth (MB/s)", range_x = [datetime_range_from, datetime_range_to])
+	fig.update_traces(mode = 'lines+markers')
 	return fig
 
 @app.callback(
@@ -106,7 +108,8 @@ def display_graph3(n_intervals, pktAddressToUse):
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'warmupPercent'
 	get_current_datetime_range()
-	fig = px.line(dataframe, x = x, y = y, color = 'pool', title="Warmup (%)", range_x = [datetime_range_from, datetime_range_to])	
+	fig = px.scatter(dataframe, x = x, y = y, color = 'pool', title="Warmup (%)", range_x = [datetime_range_from, datetime_range_to])
+	fig.update_traces(mode = 'lines+markers')
 	return fig
 
 @app.callback(
@@ -120,6 +123,7 @@ def display_graph4(n_intervals, pktAddressToUse):
 	dataframe = dataframe[dataframe['pktAddress'] == pktAddressToUse]
 	x, y = 'date', 'credits'
 	get_current_datetime_range()
-	fig = px.line(dataframe, x = x, y = y, color = 'pool', title="Credits", range_x = [datetime_range_from, datetime_range_to])	
+	fig = px.scatter(dataframe, x = x, y = y, color = 'pool', title="Credits", range_x = [datetime_range_from, datetime_range_to])
+	fig.update_traces(mode = 'lines+markers')
 	return fig
 
